@@ -55,6 +55,7 @@ public class UserController {
 		//@RequestParam(value="password", required=true, defaultValue="") String password,
 		@ModelAttribute UserVo userVo){ //promt에게 변수를 따로 받았었지만 getter, setter가 설정된 객체가 있다면 객체를 이용해 한방에 받을 수 있다.
 		System.out.println(userVo);
-		return "UserController:login(String, String)";
+		//return "UserController:login(String, String)";
+		return "redirect:/main";
 	}
 }
